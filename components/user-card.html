@@ -13,28 +13,25 @@
 </head>
 
 <body>
-  <div class="col-lg-4">
+  <div class="col-8 m-auto">
     <div class="bs-component">
       <div class="card mb-3">
         <div class="card-body">
-          <h5 class="card-title"><%= @event.title %></h5>
-          <h6 class="card-subtitle text-muted"><%= @event.admin %></h6>
+          <h5 class="card-title"><%= #{@user.first_name @user.last_name} %></h5>
         </div>
-        <img src="https://source.unsplash.com/1000x500" alt="placeholder">
+        <img src="https://source.unsplash.com/1000x500?person" alt="placeholder">
         <div class="card-body">
-          <p class="card-text"><%= @event.description %></p>
+          <p class="card-text"><%= @user.description %></p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Date: <%= @event.date %></li>
-          <li class="list-group-item">Place: <%= @event.location %></li>
-          <li class="list-group-item">Price: <%= @event.price %></li>
-          <li class="list-group-item">Attendees: <%= @head_count %></li>
+          <li class="list-group-item">email: <%= @user.email %></li>
+          <li class="list-group-item">member since: <%= @user.created_at %></li>
         </ul>
         <div class="card-body">
-          <a href="#" class="card-link">Attend</a>
+          <a href="#" class="card-link"></a>
           <!-- <a href="#" class="card-link">Unregister</a> -->
         </div>
-        <div class="card-footer text-muted"><%= event.created_at.strftime("#{event.created_at.day.ordinalize} %B %Y") %></div>
+        <div class="card-footer text-muted">Last updated <%= user.updated_at.strftime("#{user.updated_at.day.ordinalize} %B %Y") %></div>
       </div>
     </div>
   </div>
