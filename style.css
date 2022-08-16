@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .hero::before {
   content: "";
   position: absolute;
@@ -19,11 +20,11 @@
   background-position: center center;
   filter: brightness(60%);
 }
+
 .hero-content {
   position: relative;
   text-align: center;
 }
-
 
 .banner {
   position: relative;
@@ -33,6 +34,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .banner::before {
   content: "";
   position: absolute;
@@ -46,7 +48,20 @@
   background-position: center center;
   filter: brightness(60%);
 }
+
 .banner-content {
   position: relative;
   text-align: center;
+}
+
+.spacer-sm {
+  height: 10vh;
+}
+
+.spacer-md {
+  height: 20vh;
+}
+
+.spacer-lg {
+  height: 30vh;
 }
